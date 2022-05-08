@@ -28,9 +28,9 @@
 				<h1>The Big Title of the Whole Story Should Be Here, And It Can Be This Long.</h1>
 				<p class="major">And here goes the byline "By team S.C.A.M"</p>
 				<ul class="actions">
-					<li><a class="button" id="Data&FactsButton">Data&Facts</a></li>
-					<li><a class="button" id="WhatDoTheySayButton">What Do They Say</a></li>
-					<li><a class="button" id="TheFullVersionButton">The Full Version</a></li>				
+					<li><a class="button" id="Data&Facts button">Data&Facts</a></li>
+					<li><a class="button" id="What Do They Say button">What Do They Say</a></li>
+					<li><a class="button" id="The Full Version button">The Full Version</a></li>				
 				</ul>
 			</div>
 			<div class="image">
@@ -38,7 +38,7 @@
 			</div>
 		</section>
 
-	<div id="FullVersionContent">
+	<div id="full version content">
 
         <!-- Intro -->
 		<section class="wrapper style1 align-left">
@@ -150,7 +150,7 @@
 
     </div>
 
-	<div id="InterviewsContent">
+	<div id="interviews content">
 
 		<section class="wrapper style1 align-left">
 			<div class="inner" id="first">
@@ -185,7 +185,7 @@
 	</div>
 
 
-	<div id="DataAndFactsContent">
+	<div id="data and facts content">
 
 		<section class="wrapper style1 align-left">
 			<div class="inner" id="first">
@@ -247,20 +247,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("a[id='Data&FactsButton']").click(function(){
-	$("div[id='DataAndFactsContent']").show();
-    $("div[id='FullVersionContent']").hide();
-	$("div[id='InterviewsContent']").hide();
+  $("a[id='Data&Facts button']").click(function(){
+    $("div[id='full version content']").hide();
+	$("div[id='full version content']").hide();
   });
-  $("a[id='WhatDoTheySayButton']").click(function(){
-    $("div[id='InterviewsContent']").show();
-	$("div[id='FullVersionContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
+  $("a[id='The Full Version button']").click(function(){
+    $("div[id='full version content']").show();
+	$("div[id='interviews content']").hide();
+	$("div[id='data and facts content']").hide();
   });
-  $("a[id='TheFullVersionButton']").click(function(){
-    $("div[id='FullVersionContent']").show();
-	$("div[id='InterviewsContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
+  $("a[id='What Do They Say button']").click(function(){
+    $("div[id='interviews content']").show();
+	$("div[id='full version content']").hide();
+	$("div[id='data and facts content']").hide();
   });
 });
 </script>

@@ -28,9 +28,11 @@
 				<h1>The Big Title of the Whole Story Should Be Here, And It Can Be This Long.</h1>
 				<p class="major">And here goes the byline "By team S.C.A.M"</p>
 				<ul class="actions">
-					<li><a class="button" id="Data&FactsButton">Data&Facts</a></li>
-					<li><a class="button" id="WhatDoTheySayButton">What Do They Say</a></li>
-					<li><a class="button" id="TheFullVersionButton">The Full Version</a></li>				
+					<li><a class="button">Data&Facts</a></li>
+					<li><a class="button">What do they say</a></li>
+					<li><a class="button">The Full Version</a></li>	
+					<button id="hide">Hide</button>
+                    <button id="show">Show</button>				
 				</ul>
 			</div>
 			<div class="image">
@@ -38,7 +40,7 @@
 			</div>
 		</section>
 
-	<div id="FullVersionContent">
+	<div id="full version">
 
         <!-- Intro -->
 		<section class="wrapper style1 align-left">
@@ -150,7 +152,7 @@
 
     </div>
 
-	<div id="InterviewsContent">
+	<div id="interviews">
 
 		<section class="wrapper style1 align-left">
 			<div class="inner" id="first">
@@ -159,7 +161,7 @@
 				</p>
 			</div>
         </section>
-			<!-- Andrew Norton -->
+			<!-- Tuition Fees -->
 		<section class="wrapper style1 align-left">
 			<div class="inner">
 				<h2>Andrew Norton</h2>
@@ -179,34 +181,6 @@
 					<p>They’ve been growing, at least in all the English speaking countries, except for [during] covid, heavily driven by China and India, to less extent Latin America. And so this is driven in part by growing middle classes in countries that haven't historically had high higher education participation rates. And so what we're seeing is in some ways, it's very very interesting from European, the United States and Australia, you know, mass higher education comes from domestic provision of higher education, or as, in some of these other countries it's proceeding at such a rapid rate that their local institutions can't keep up, or are not desirable to the local population. And so we're seeing this huge movement of people around the world which is creating massive commercial opportunities for particularly English-speaking universities.
 					
 				</p>
-		    </div>
-		</section>
-
-	</div>
-
-
-	<div id="DataAndFactsContent">
-
-		<section class="wrapper style1 align-left">
-			<div class="inner" id="first">
-				<p>
-				This is the data and facts module
-				</p>
-			</div>
-        </section>
-			<!-- Andrew Norton -->
-		<section class="wrapper style1 align-left">
-			<div class="inner">
-				<h2>The data viz</h2>
-				<div class="flourish-embed flourish-map" data-src="visualisation/7825215"></div>
-				<!-- blockquote -->
-				<section>
-					<div class="content">
-						<blockquote><b>This is a blockquote. Use it if a quote is very important.This is a
-								blockquote. Use it if a quote is very important.This is a blockquote. Use it if
-								a quote is very important.</b></blockquote>
-					</div>
-				</section>
 		    </div>
 		</section>
 
@@ -247,20 +221,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("a[id='Data&FactsButton']").click(function(){
-	$("div[id='DataAndFactsContent']").show();
-    $("div[id='FullVersionContent']").hide();
-	$("div[id='InterviewsContent']").hide();
+  $("#hide").click(function(){
+    $("div[id='full version']").hide();
   });
-  $("a[id='WhatDoTheySayButton']").click(function(){
-    $("div[id='InterviewsContent']").show();
-	$("div[id='FullVersionContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
-  });
-  $("a[id='TheFullVersionButton']").click(function(){
-    $("div[id='FullVersionContent']").show();
-	$("div[id='InterviewsContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
+  $("#show").click(function(){
+    $("div[id='full version']").show();
   });
 });
 </script>

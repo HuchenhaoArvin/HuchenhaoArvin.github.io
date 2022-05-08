@@ -28,18 +28,18 @@
 				<h1>The Big Title of the Whole Story Should Be Here, And It Can Be This Long.</h1>
 				<p class="major">And here goes the byline "By team S.C.A.M"</p>
 				<ul class="actions">
-					<li><a class="button" id="Data&FactsButton">Data&Facts</a></li>
-					<li><a class="button" id="WhatDoTheySayButton">What Do They Say</a></li>
-					<li><a class="button" id="TheFullVersionButton">The Full Version</a></li>				
+					<li><a class="button">Version button</a></li>
+					<li><a class="button">Version button</a></li>
+					<li><a class="button">Version button</a></li>
+					<div class="content">
+
+						
 				</ul>
 			</div>
 			<div class="image">
 				<img src="images/banner.jpg" alt="" />
 			</div>
 		</section>
-
-	<div id="FullVersionContent">
-
         <!-- Intro -->
 		<section class="wrapper style1 align-left">
 			<div class="inner" id="first">
@@ -148,70 +148,6 @@
 				</p>
 		</section>
 
-    </div>
-
-	<div id="InterviewsContent">
-
-		<section class="wrapper style1 align-left">
-			<div class="inner" id="first">
-				<p>
-				These are the interviews
-				</p>
-			</div>
-        </section>
-			<!-- Andrew Norton -->
-		<section class="wrapper style1 align-left">
-			<div class="inner">
-				<h2>Andrew Norton</h2>
-				<img src="https://picsum.photos/640/280" alt="placeholder" width="100%">
-				<b>Our research findings from the Higher Education Statistics Agency demonstrate that university income has become more reliant on tuition fees in the UK than ever before. For example - In 2020-2021, 13 out of 24 Russell Group universities received more than 50% of their income from tuition fees.
-					Do you have any insight on why this might be?</b>
-					
-					<p>I think there's two reasons, One is about a decade ago England abolished subsidies for most undergraduate courses and switched to the 9 thousand pound model so that meant the fee income from English students went up significantly. Over this same time period, with the exception of a dip during covid, the number of international students in the UK has gone up and they typically pay much higher fees than the local students. And so that has a big effect on the overall share of university revenue that is coming from tuition fees So I think they're both domestic and international factors here. </p>
-					
-					<b>Is it a similar picture in Australia?</b>
-					
-					<p>It's broadly similar the big difference is that in Australia the tuition subsidies, even though they're now quite small in some fields, have never been abolished, and so they are still playing a larger role in the Australian system than the English system……. Thats the main reason Australia has, I think, been a little bit different to the UK in that regard. And there's no move here [australia] to get rid of the tuition subsidies entirely so I think that’ll be a fairly stable feature of the Australian system. </p>
-					
-					<b>So, as you said international, students have become an increasingly leaned on income source, for, it seems all universities. And in the Uk at least, often we find this is because domestic students' fees are capped, whereas international students’ fees are not. 
-					First of all, do you know the extent to which they have been growing over the past few years in terms of the global picture?</b>
-					
-					<p>They’ve been growing, at least in all the English speaking countries, except for [during] covid, heavily driven by China and India, to less extent Latin America. And so this is driven in part by growing middle classes in countries that haven't historically had high higher education participation rates. And so what we're seeing is in some ways, it's very very interesting from European, the United States and Australia, you know, mass higher education comes from domestic provision of higher education, or as, in some of these other countries it's proceeding at such a rapid rate that their local institutions can't keep up, or are not desirable to the local population. And so we're seeing this huge movement of people around the world which is creating massive commercial opportunities for particularly English-speaking universities.
-					
-				</p>
-		    </div>
-		</section>
-
-	</div>
-
-
-	<div id="DataAndFactsContent">
-
-		<section class="wrapper style1 align-left">
-			<div class="inner" id="first">
-				<p>
-				This is the data and facts module
-				</p>
-			</div>
-        </section>
-			<!-- Andrew Norton -->
-		<section class="wrapper style1 align-left">
-			<div class="inner">
-				<h2>The data viz</h2>
-				<div class="flourish-embed flourish-map" data-src="visualisation/7825215"></div>
-				<!-- blockquote -->
-				<section>
-					<div class="content">
-						<blockquote><b>This is a blockquote. Use it if a quote is very important.This is a
-								blockquote. Use it if a quote is very important.This is a blockquote. Use it if
-								a quote is very important.</b></blockquote>
-					</div>
-				</section>
-		    </div>
-		</section>
-
-	</div>
-    
 		<!-- Footer -->
 		<footer class="wrapper style1 align-center">
 			<div class="inner">
@@ -242,28 +178,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="https://public.flourish.studio/resources/embed.js"></script>
-	
-	<!-- versions -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a[id='Data&FactsButton']").click(function(){
-	$("div[id='DataAndFactsContent']").show();
-    $("div[id='FullVersionContent']").hide();
-	$("div[id='InterviewsContent']").hide();
-  });
-  $("a[id='WhatDoTheySayButton']").click(function(){
-    $("div[id='InterviewsContent']").show();
-	$("div[id='FullVersionContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
-  });
-  $("a[id='TheFullVersionButton']").click(function(){
-    $("div[id='FullVersionContent']").show();
-	$("div[id='InterviewsContent']").hide();
-	$("div[id='DataAndFactsContent']").hide();
-  });
-});
-</script>
+
 </body>
 
 </html>
